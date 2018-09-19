@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".ProfileActivity">
+
+
+    <ImageView
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/imageAvatar"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_plus"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"
+        app:met_singleLineEllipsis="true"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"
+        app:met_singleLineEllipsis="true"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/colorPrimary"
+        app:met_singleLineEllipsis="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btnCancel"
+            android:hint="CANCEL"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_sign_in_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnSave"
+            android:hint="SAVE"
+            android:textStyle="bold"
+            android:textColor="@color/btnRegister"
+            android:background="@drawable/btn_register_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
